@@ -3,72 +3,80 @@
 <head>
 <title>Pranav Rao: Portfolio</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="home.css">
 </head>
 
 <body>
 
 <div class="navbar">
-    <img class="aggie-picture"></img>
-
-    <nav>
+    <img src="texas-a-m-aggies-1-logo-black-and-white.png" alt="Texas A&M Logo" class="logo"></img>
+    <nav class="links"> 
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="qualifications.html">Qualifications</a>
       <a href="service.html">Service</a>
-      <a href="genai.html">AI</a>
+      <a href="genai.html">AI x Hobbies</a>
     </nav>
   </div>
 
-  <div>
-            <article>
-            <h2>News Summarization with Transformers</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat, justo in egestas
-                varius, lacus arcu ullamcorper magna, nec egestas urna sem et lorem. Integer fermentum
-                sagittis diam, a rhoncus velit feugiat vel. Maecenas porta orci et augue bibendum, nec
-                viverra purus interdum. Curabitur sit amet lacus vel sapien tempus facilisis. Aliquam erat
-                volutpat. Duis ultrices, massa sit amet efficitur cursus, velit lorem fringilla metus, ut
-                volutpat enim sem a felis. Sed vulputate diam ac justo malesuada, vitae pretium lectus
-                mattis. Aenean id mi id arcu molestie semper. Praesent suscipit elementum dictum. Integer
-                iaculis, ante vel porttitor lacinia, arcu arcu euismod libero, sit amet ullamcorper odio
-                neque id mi. Donec rhoncus, nibh ac placerat sodales, metus lectus efficitur lorem, vitae
-                vulputate neque nisl id enim. Pellentesque a sem id tortor placerat pulvinar non non risus.
-            </p>
-            <p><a href="">GitHub</a></p>
-            </article>
+  <div class="portfolio-page">
+        <div class="personal">
+            <h2>Personal Projects</h2>
+            <div>
+                <h3>News Article Summarization with Transformers</h3>
+                <p>
+                    Fine-tuned BART and Longformer encoder decoder transformers for abstractive news summarization, leveraging self-attention for summary generation and cross-attention for contextualization.
+                    Analyzed token length distributions and applied input/output truncation to balance context retention with efficient transformer training.
+                    Processed a multi-GB dataset, and optimized GPU training through gradient checkpointing, gradient accumulation, and FP16.
 
-            <article>
-            <h2>Sleep Disorder Classifier (XGBoost)</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non malesuada lorem. In hac
-                habitasse platea dictumst. Suspendisse potenti. Morbi id justo id nisl accumsan tempus.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                Integer in luctus erat. Sed id venenatis nibh. Curabitur euismod, nibh quis malesuada
-                elementum, neque velit mattis ipsum, vitae placerat lacus est ac odio. Phasellus id
-                tristique nisi, vitae tristique augue. Donec scelerisque, magna at finibus accumsan, tortor
-                odio dictum dolor, sed consequat orci metus vitae justo. Proin id eros sit amet eros
-                tincidunt ultricies. Duis vel risus eget enim interdum commodo. Aliquam consequat laoreet
-                tortor, vitae pulvinar velit facilisis id. Cras id metus et urna imperdiet vehicula.
-            </p>
-            <p><a href="">GitHub</a></p>
-            </article>
+                </p>
+            </div>
+            <br>
+            <div>
+                <h3>Sleep Disorder Classifier (XGBoost)</h3>
+                <p>
+                    Developed an XGBoost algorithm to predict sleep disorders using metrics such as sleep duration, quality, BMI, blood pressure, and heart rate, achieving 92% accuracy. Applied data preparation techniques, including normalization, label and one-hot encoding, and feature selection, to enhance model performance.
+                </p>
+                <p>Github: <a href="https://github.com/pranavprashantha/MachineLearning_SleepAnalysis">https://github.com/pranavprashantha/MachineLearning_SleepAnalysis</a></p>
+            </div>
+            <br>
+            <div>
+                <h3>9x9 Sudoku Solver - Z3 SMT Solver</h3>
+                <p>
+                    Applied predicate logic to define Sudoku constraints using compound predicates.
+                    Developed a Python script to generate SMT-Lib code, enabling the Z3 SMT solver to efficiently solve any 9x9 Sudoku.
+                </p>
+                <p>Github: <a href="https://github.com/pranavprashantha/SMT_Sudoku_Solver">https://github.com/pranavprashantha/SMT_Sudoku_Solver</a></p>
+            </div>
+            <br>
+            <div>
+                <h3>2D Pixel Art RPG Game (Java)</h3>
+                <p>
+                    Designed a modular and scalable game architecture using OOP principles such as inheritance, encapsulation, and polymorphism to implement character classes, inventory systems, and game mechanics.
+                    Developed an interactive 2D RPG game in Java by creating scalable character classes, inventory systems, and mob behavior.
+                </p>
+            </div>
 
-            <article>
-            <h2>Reverse Engineering Assistant (Web UI)</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim, magna sed
-                commodo tincidunt, nibh enim ultrices sem, ac pulvinar lorem justo ac nibh. Nunc pulvinar
-                tincidunt risus, ac iaculis nunc ullamcorper ut. Cras non sem ac justo hendrerit maximus.
-                Vivamus sodales, lorem sit amet porttitor malesuada, urna arcu dignissim sem, in
-                ullamcorper massa magna sed libero. Quisque facilisis felis vitae felis semper, non
-                interdum lorem pellentesque. Maecenas congue euismod diam, nec finibus augue feugiat quis.
-                Fusce vel arcu id arcu tincidunt viverra. Nam quis lobortis elit. Etiam rutrum, arcu vitae
-                volutpat tristique, odio diam tincidunt velit, ut dapibus magna est non purus. Integer sit
-                amet diam sed justo finibus dictum. Fusce suscipit dolor in mauris lacinia, non gravida
-                augue pharetra.
-            </p>
-            <p><a href="">GitHub</a></p>
-            </article>
+        </div>
+
+        <div class="team-driven">
+            <h2>Team-Driven Projects</h2>
+            <div>
+                <h3>Reverse Engineering Assistant (Web UI)</h3>
+                <p>
+                    Developed a Django-based web interface for a reverse engineering debugger (binary to assembly disassembler) utilizing WinDbg. Built templates using HTML, CSS, and Javascript. Created a websocket connection that updates debugger given user input.
+                    Contributed to the creation of an AI chatbot designed to assist users in completing reverse engineering tasks, eliminating the need for specialized expertise in traditional reverse engineering tools.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h3>Computational Modeling for Enhanced Oil Recovery(EOR) Research</h3>
+                <p>
+                    Developed MATLAB code to compute partial derivatives for modeling dynamically evolving traveling viscosity waves. Conducted large-scale simulations using HPRC resources to analyze viscosity waves and viscous fingering across multiple grid sizes for enhanced oil recovery studies.
+                </p>
+                <p>Article: <a href="https://pubs.aip.org/aip/pof/article/35/4/046606/2887188">https://pubs.aip.org/aip/pof/article/35/4/046606/2887188</a></p>
+            </div>
+        </div>
     </div>
 
 </body>

@@ -1,0 +1,243 @@
+:root {
+  /* Core palette */
+  --brand-deep: #003135;   /* deep teal (headings, strong accents) */
+  --header-bg:  #024950;   /* header background */
+  --accent-warm:#964734;   /* tiny accent/badge/underline */
+  --action:     #88C3CD;   /* primary action/active link */
+  --canvas:     #AFDDE5;   /* page background / cards */
+
+  /* Text & lines */
+  --text:       #024950;   /* body text on light canvas */
+  --heading:    #003135;   /* section/page headings */
+  --link:       #0FA4AF;   /* default link color */
+  --link-hover: #964734;   /* hover/active accent */
+  --border:     #003135;   /* subtle dividers on light canvas */
+
+  /* Utility */
+  --white:      #ffffff;
+  --black:      #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background: var(--brand-deep);
+    color: var(--white);
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.navbar nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.links {
+    padding-right: 15px;
+}
+
+.logo {
+  height: 40px;
+  padding-left: 15px;
+  color: var(--white);
+}
+
+.first-half { 
+  background-color: var(--white);
+  margin-top: 0;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.first-half h1,
+.first-half h2 { 
+  margin-top: 0;    
+}
+
+.name-large h1 {
+  color: var(--heading);
+  margin: 0;
+  text-align: center;
+  font-size: clamp(3rem, 10vw, 6rem);
+  letter-spacing: 0.08em;  
+  word-spacing: 0.5em;     
+  line-height: .9;     
+  margin: 0;
+}
+
+.name-large h1 .last-name {
+  display: inline-block;
+  margin-left: 1.5em; 
+  margin-top: 0.3em;
+}
+
+.name-large,
+.my-image {
+  flex: 1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-image img {
+  height: 600px;
+  border-radius: 1%;
+  border: 1px solid var(--brand-deep);
+}
+
+.who-i-am {
+  background-color: var(--canvas);
+  padding: 24px 16px;
+  margin-top: 0;
+}
+
+.who-i-am p {
+  font-size: 1.2rem;
+  padding: 10px 40px;
+  margin: 10px 10px 10px 10px;
+}
+
+.index-bottom {
+  margin-top: 0;
+  padding: 0 0 0 12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.index-bottom div {
+  flex: 1;                        
+  padding: 1rem;
+}
+
+.work-culture {
+  text-align: center;
+}
+
+.index-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.index-bottom li {
+  margin: 0.3rem 0;            
+}
+
+.contact {
+  background: var(--action);
+}
+
+
+
+
+/* Portfolio Page */
+
+.portfolio-page {
+  margin-top: 0;
+  display: flex;
+  min-height: 100vh; 
+  align-items: stretch;
+}
+
+.portfolio-page h2 {
+  margin-bottom: 50px;
+}
+
+.personal, .team-driven {
+  padding: 3rem;
+}
+
+.personal {
+  background-color: var(--canvas);
+}
+
+/* Qualifications Page*/
+
+.resume iframe{
+  border: none;
+  display: block;
+  margin: 40px auto;
+  width: 60%;
+  height: 800px;
+} 
+
+.resume h2 {
+  margin: 50px 20px 20px 50px;
+}
+
+.qual-more {
+  margin-top: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.technical-skills, .about-interests {
+  padding: 3rem;
+}
+
+.qual-more ul {
+  list-style: none;
+  padding: 0;
+}
+
+.qual-more li {
+  margin-bottom: 1rem;
+}
+
+.technical-skills {
+  background-color: var(--canvas);
+}
+
+.about-interests {
+  background-color: var(--action);
+}
+
+/* services */
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: space-between;
+  background-color: var(--canvas);
+}
+
+.service-item {
+  flex: 1;
+  padding-right: 8rem;
+  padding-left: 4rem;
+}
+
+.service-image {
+  flex: 1;
+  margin: 10px 10px 10px 10px;
+  padding: 2rem 4rem;
+  justify-content: center;
+}
+
+#stdavids {
+  background-color: var(--action) !important
+}
