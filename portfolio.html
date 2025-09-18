@@ -3,7 +3,9 @@
 <head>
 <title>Pranav Rao: Portfolio</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="home.css" id="blue-style">
+<link rel="stylesheet" href="home2.css" id="orange-style" disabled>
+<script defer src="switch.js"></script>
 </head>
 
 <body>
@@ -17,12 +19,13 @@
       <a href="service.html">Service</a>
       <a href="genai.html">AI x Hobbies</a>
     </nav>
+    <button id="theme-toggle">Toggle Theme</button>
   </div>
 
   <div class="portfolio-page">
         <div class="personal">
             <h2>Personal Projects</h2>
-            <div>
+            <div class="project-item">
                 <h3>News Article Summarization with Transformers</h3>
                 <p>
                     Fine-tuned BART and Longformer encoder decoder transformers for abstractive news summarization, leveraging self-attention for summary generation and cross-attention for contextualization.
@@ -32,7 +35,7 @@
                 </p>
             </div>
             <br>
-            <div>
+            <div class="project-item">
                 <h3>Sleep Disorder Classifier (XGBoost)</h3>
                 <p>
                     Developed an XGBoost algorithm to predict sleep disorders using metrics such as sleep duration, quality, BMI, blood pressure, and heart rate, achieving 92% accuracy. Applied data preparation techniques, including normalization, label and one-hot encoding, and feature selection, to enhance model performance.
@@ -40,7 +43,7 @@
                 <p>Github: <a href="https://github.com/pranavprashantha/MachineLearning_SleepAnalysis">https://github.com/pranavprashantha/MachineLearning_SleepAnalysis</a></p>
             </div>
             <br>
-            <div>
+            <div class="project-item">
                 <h3>9x9 Sudoku Solver - Z3 SMT Solver</h3>
                 <p>
                     Applied predicate logic to define Sudoku constraints using compound predicates.
@@ -49,7 +52,7 @@
                 <p>Github: <a href="https://github.com/pranavprashantha/SMT_Sudoku_Solver">https://github.com/pranavprashantha/SMT_Sudoku_Solver</a></p>
             </div>
             <br>
-            <div>
+            <div class="project-item">
                 <h3>2D Pixel Art RPG Game (Java)</h3>
                 <p>
                     Designed a modular and scalable game architecture using OOP principles such as inheritance, encapsulation, and polymorphism to implement character classes, inventory systems, and game mechanics.
@@ -61,7 +64,7 @@
 
         <div class="team-driven">
             <h2>Team-Driven Projects</h2>
-            <div>
+            <div class="project-item">
                 <h3>Reverse Engineering Assistant (Web UI)</h3>
                 <p>
                     Developed a Django-based web interface for a reverse engineering debugger (binary to assembly disassembler) utilizing WinDbg. Built templates using HTML, CSS, and Javascript. Created a websocket connection that updates debugger given user input.
@@ -69,7 +72,7 @@
                 </p>
             </div>
             <br>
-            <div>
+            <div class="project-item">
                 <h3>Computational Modeling for Enhanced Oil Recovery(EOR) Research</h3>
                 <p>
                     Developed MATLAB code to compute partial derivatives for modeling dynamically evolving traveling viscosity waves. Conducted large-scale simulations using HPRC resources to analyze viscosity waves and viscous fingering across multiple grid sizes for enhanced oil recovery studies.

@@ -1,17 +1,17 @@
 :root {
   /* Core palette */
-  --brand-deep: #003135;   /* deep teal (headings, strong accents) */
-  --header-bg:  #024950;   /* header background */
-  --accent-warm:#964734;   /* tiny accent/badge/underline */
-  --action:     #88C3CD;   /* primary action/active link */
-  --canvas:     #AFDDE5;   /* page background / cards */
+  --nav: #003135;  
+  --header-bg:  #024950;  
+  --accent-warm:#964734;  
+  --action:     #88C3CD;  
+  --canvas:     #AFDDE5;  
 
   /* Text & lines */
-  --text:       #024950;   /* body text on light canvas */
-  --heading:    #003135;   /* section/page headings */
-  --link:       #0FA4AF;   /* default link color */
-  --link-hover: #964734;   /* hover/active accent */
-  --border:     #003135;   /* subtle dividers on light canvas */
+  --text:       #024950;  
+  --heading:    #003135;
+  --link:       #0FA4AF;  
+  --link-hover: #964734;
+  --border:     #003135; 
 
   /* Utility */
   --white:      #ffffff;
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar {
-    background: var(--brand-deep);
+    background: var(--nav);
     color: var(--white);
     padding: 24px 16px;
     display: flex;
@@ -42,6 +42,19 @@ body {
 
 .navbar nav a:hover {
   text-decoration: underline;
+}
+
+#theme-toggle {
+  border: none;
+  outline: none;
+  background: var(--nav);
+  color: var(--white);
+  font-weight: bold;
+}
+
+#theme-toggle:hover {
+  cursor: pointer;
+  color: var(--action);
 }
 
 .links {
